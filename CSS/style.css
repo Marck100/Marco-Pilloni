@@ -3,12 +3,14 @@ h1, p {
 }
 
 body, html {
+
+    padding: 0;
+    margin: 0;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent !important;
-    padding: 0;
-    margin: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -128,21 +130,46 @@ p {
     margin-bottom: 6%
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1150px) {
 
     h1 {
-        font-size: 68px;
-        font-size: 18vw
+        font-size: 112px;
+        font-size: 7.9vw;
     }
 
     h2 {
-        font-size: 24px;
-        font-size: 6.4vw
+        font-size: 32px;
+        font-size: 3.0vw;
     }
 
     p {
-        font-size: 18px;
-        font-size: 4.8vw
+        font-size: 20px;
+        font-size: 2.0vw;
+    }
+
+    .content {
+        top: 100vh;
+        left: 50%;
+        right: 10%;
+        padding-bottom: 34vh
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    h1 {
+        font-size: 112px;
+        font-size: 8.2vw;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-size: 4.0vw;
+    }
+
+    p {
+        font-size: 20px;
+        font-size: 3.0vw;
     }
 
     .content {
@@ -152,4 +179,31 @@ p {
         padding: 10%
     }
 }
+
+@media screen and (max-width:768px) {
+
+    h1 {
+        font-size: 68px;
+        font-size: 18vw
+    }
+
+    h2 {
+        font-size: 20px;
+        font-size: 6.0vw
+    }
+
+    p {
+        font-size: 10px;
+        font-size: 4.0vw
+    }
+
+    .content {
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 8%
+    }
+}
+
+
 
